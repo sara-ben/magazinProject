@@ -1,6 +1,6 @@
 const express=require('express');
 const mongoose=require('mongoose');
-const router = require("./routes/api");
+const router = require("./routes/magazineApi");
 const bodyParser=require("body-parser");
 const dotenv=require('dotenv');
 

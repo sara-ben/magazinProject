@@ -1,14 +1,14 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
-const magazineSchema = new Schema({ 
+const magazineSchema = mongoose.Schema({ 
     title: {type:String, required:true}, 
     date: {type:Date, required:true}, 
-    password: {type:String, required:true}, 
-    userId: {type:mongoose.Schema.Types.ObjectId, ref:'User'},
+    imgPath: {type:String, required:true}, 
+    // userId: {type:mongoose.Schema.Types.ObjectId, ref:'User'},
     posts :[ 
         { type:mongoose.Schema.Types.ObjectId, ref:'Post'},
     ]
     
 });
 
-module.exports= mongoose.model(Magazine, 'magazineSchema');
+module.exports= mongoose.model('Magazine', magazineSchema);
