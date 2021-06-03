@@ -6,10 +6,13 @@ import Card from "react-bootstrap/Card";
 import CreateMagazinImage from "../image/top-view-person-writing-laptop-with-copy-space/top-view-person-writing-laptop-with-copy-space@2x.png";
 import goSomewereImage from "../image/top-view-person-writing-laptop-with-copy-space/toMagazin.png";
 import  './MainPage.css';
+import { Link } from 'react-router-dom';
 export default function MainPage(props) {
 
 
-
+  // function newUser() {
+  //   history.push('/register')
+  // }
 
 
   return (
@@ -35,7 +38,8 @@ export default function MainPage(props) {
             <Card.Img variant="top" src={CreateMagazinImage} />
             <Card.Body>
 
-              <Button variant="primary">Create Magazin</Button>
+              {/* <Button variant="primary">Create Magazin</Button> */}
+              <Link variant="link" to="/CreateMagazin" >Create Magazin</Link>
             </Card.Body>
           </Card>
         </div>
