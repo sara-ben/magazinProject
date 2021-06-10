@@ -6,11 +6,15 @@ import Card from "react-bootstrap/Card";
 import CreateMagazinImage from "../image/top-view-person-writing-laptop-with-copy-space/top-view-person-writing-laptop-with-copy-space@2x.png";
 import goSomewereImage from "../image/top-view-person-writing-laptop-with-copy-space/toMagazin.png";
 import pin from "../image/icons/urn_aaid_sc_US_21663399-2003-43d6-b979-82c629554167 (1).png";
+import { Link } from 'react-router-dom';
+
 import './MainPage.css';
 export default function MainPage(props) {
 
 
-
+  // function newUser() {
+  //   history.push('/register')
+  // }
 
 
   return (
@@ -49,8 +53,9 @@ export default function MainPage(props) {
           <Card class="crd" id="crd2" style={{ width: '18rem' }}>
             <Card.Img class="pic" variant="top" src={CreateMagazinImage} />
             <Card.Body  class="d-flex justify-content-center">
+            <Link variant="link" to="/CreateMagazin" >Create Magazin</Link>
 
-              <Button variant="primary"  >Create Magazin</Button>
+              {/* <Button variant="primary"  >Create Magazin</Button> */}
             </Card.Body>
           </Card>
         </div>
