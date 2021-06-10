@@ -1,0 +1,51 @@
+
+.body{
+    background: #E8EAEC 0% 0% no-repeat padding-box;
+    min-height: 700px;
+}
+
+
+.cards{
+position: center;
+margin-top: 300px;
+margin-bottom: 100px;
+margin-left: 200px;
+}
+.crd{
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    padding-right: 20px;
+
+}
+.pic{
+    padding-bottom: 20px;
+}
+hr{
+    /* background: #E8EAEC 0% 0% no-repeat padding-box; */
+    width: 7%;
+    height: 5px;;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(45deg, #9ff8e9, #76e7eb, #3ecbee);  /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, #9ff8e9, #76e7eb, #3ecbee);  /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #9ff8e9, #76e7eb, #3ecbee);  /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #9ff8e9, #76e7eb, #3ecbee);
+    /* linear-gradient: rgba(255, 255, 255,) */
+    /* See the Pen gradiant by henry (@superwebdigital) on CodePen. */
+}
+.icon{
+   width: 100px; 
+   height: 100px;
+}
+#crd1,#crd2{
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+#crd2{
+    margin-left: 15px;
+}
+#crd1{
+    margin-right: 15px;
+}
