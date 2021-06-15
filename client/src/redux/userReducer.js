@@ -1,4 +1,7 @@
 import produce from 'immer';
+import createReducer from "./ReducerUtils";
+
+
 
 const initialState = {
 
@@ -6,34 +9,46 @@ const initialState = {
         id: "",
         name: "",
         email: "",
-        password: "",
-        Images: []
-
+        city: "",
+        phone: "",
+        age: "",
+        currentUser: "",
+        users: []
     },
 }
 
 
-export default produce((state, action) => {
-    switch (action.type) {
-        case 'SET_USER_ID':
-            state.user.id = action.payload;
-            break;
-        case 'SET_USER_NAME':
-            state.user.name = action.payload;
-            break;
-        case 'SET_USER_EMAIL':
-            state.user.email = action.payload;
-            break;
-        case 'SET_USER_PASSWORD':
-            state.user.password = action.payload;
-            break;
-        case 'SET_USER_IMAGES':
-            state.user.Images = action.payload;
-            break;
 
+const users = {
+    setId(state, action) {
+      debugger
+      state.user.id = action.payload;
+},
+    setName(state, action) {
+      debugger
+      state.user.name = action.payload;
+    },
+    setEmail(state, action) {
+        state.user.email = action.payload;
+    },
+    setCity(state, action) {
+        state.user.password = action.payload;
+    },
+    setPhone(state, action) {
+        state.user.phone = action.payload;
+    },
+    setAge(state, action) {
+        state.user.age = action.payload;
+    },
+    setUser(state, action) {
+        state.user.currentUser = action.payload;
+      },
+      allUsers(state, action) {
+        state.user = action.payload;
+      },
+    
+  };
+  
+  
+  export default produce((state, action) => createReducer(state, action, users), initialState);
 
-        default:
-            return state
-
-    }
-}, initialState)

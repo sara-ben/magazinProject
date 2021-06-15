@@ -1,29 +1,27 @@
-export function setUserId(id) {
 
-    return { type: "SET_USER_ID", payload: id }
+
+function convertActionNameToType(actionName) {
+    return actionName.replace(/([A-Z])/g, "_$1").toUpperCase();
 }
 
-export function setUserName(name) {
+export const actions = new Proxy(
+    {},
+    {
+        get: function (target, prop) {
+            debugger
+            if (target[prop] === undefined)
+                return function (args) {
+                    return {
+                        type: convertActionNameToType(prop),
+                        payload: args
+                    };
 
-    return { type: "SET_USER_NAME", payload: name }
-}
+                };
 
-export function setUserEmail(email) {
-
-    return { type: "SET_USER_EMAIL", payload: email }
-}
-
-
-export function setUserPassword(password) {
-
-    return { type: "SET_USER_PASSWORD", payload: password }
-}
-
-export function setUserImages(Image) {
-
-    return { type: "SET_USER_IMAGES", payload: Image }
-}
-
+            else return target[prop];
+        }
+    }
+);
 
 
 
