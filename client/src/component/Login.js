@@ -122,11 +122,11 @@ export default connect(mapStateToProps, mapDispatchToProps)(function Login(props
           <UserProvider value={user}>
           </UserProvider>
           <div className="d-flex justify-content-center m-2">
-            <h2 class="blue">LogIn</h2>
+            <h2 className="blue">LogIn</h2>
           </div>
           <Form onSubmit={handleSubmit}>
             <Form.Group size="lg" controlId="email">
-              <Form.Label class="blue">Email</Form.Label>
+              <Form.Label className="blue">Email</Form.Label>
               <Form.Control
                 autoFocus
                 type="email"
@@ -135,7 +135,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(function Login(props
               />
             </Form.Group>
             <Form.Group size="lg" controlId="password">
-              <Form.Label class="blue">Password</Form.Label>
+              <Form.Label className="blue">Password</Form.Label>
               <Form.Control
                 type="password"
                 value={passwordForm}
@@ -143,7 +143,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(function Login(props
 
               />
             </Form.Group>
-            <Button block size="lg" type="submit" class="bkBlue" disabled={!validateForm()}>
+            <Button block size="lg" type="submit" className="bkBlue" disabled={!validateForm()}>
               Login
         </Button>
 

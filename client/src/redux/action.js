@@ -1,30 +1,27 @@
-export function setUserId(id) {
+export function setMagazinId(id) {
 
-    return { type: "SET_USER_ID", payload: id }
+    return { type: "SET_MAGAZIN_ID", payload: id }
 }
 
-export function setUserName(name) {
+export function setMagazinDate(date) {
 
-    return { type: "SET_USER_NAME", payload: name }
+    return { type: "SET_MAGAZIN_DATE", payload: date }
 }
 
-export function setUserEmail(email) {
+export function setMagazinTitle(title) {
 
-    return { type: "SET_USER_EMAIL", payload: email }
+    return { type: "SET_MAGAZIN_TITLE", payload: title }
 }
 
+export function setMagazinPostes(Post) {
 
-export function setUserPassword(password) {
-
-    return { type: "SET_USER_PASSWORD", payload: password }
+    return { type: "SET_MAGAZIN_POSTES", payload: Post }
 }
 
-export function setUserImages(Image) {
+export function createMagazin(magazin) {
 
-    return { type: "SET_USER_IMAGES", payload: Image }
+    return { type: "CREATE_MAGAZIN", payload: magazin }
 }
-
-
 
 
 
