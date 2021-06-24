@@ -10,6 +10,13 @@ const initialState = {
         newMagazin: {}
 
     },
+    magazinDefualt: {
+        // id: "",
+        date: new Date,
+        title: "Titel Name",
+        postes: [],
+        // newMagazin: {}
+    },
 }
 
 
@@ -27,9 +34,9 @@ export default produce((state, action) => {
         case 'SET_MAGAZIN_POSTES':
             state.magazin.postes = action.payload;
             break;
-            case '[CreateMagazin] CREATE_MAGAZIN':
+            case 'SET_MAGAZIN':
                 debugger
-                state.magazinReducer.magazinReducer.newMagazin = action.payload;
+                state.magazin = action.payload;
                 break;
 
         default:

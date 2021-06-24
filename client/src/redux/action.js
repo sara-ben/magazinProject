@@ -22,8 +22,3 @@ export function createMagazin(magazin) {
 
     return { type: "CREATE_MAGAZIN", payload: magazin }
 }
-
-
-
-
-
