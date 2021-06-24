@@ -23,6 +23,22 @@ export function createMagazin(magazin) {
     return { type: "CREATE_MAGAZIN", payload: magazin }
 }
 
+export function contenidoPost(contenid) {
+    
+
+    return { type: "CONTEIND_POST", payload: contenid }
+}
+
+export function changetitlePost(title) {
+    
+
+    return { type: "CHANGE_TITLE_POST", payload: title }
+}
+export function createPost(post) {
+ debugger
+    return { type: "CREATE_POST", payload: post }
+}
+
 
 
 

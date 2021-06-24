@@ -1,4 +1,6 @@
 
+const Post= require('../models/Post')
+
 const getImageToday = async (req, res) => {
   try {
     const data = requestApi();
@@ -75,4 +77,23 @@ catch (error)
 }
 
 
-module.exports = { getImageToday, getAllImages, getImageById, newImageUser }
+const createPost =async (req, res) => {
+  try{
+    const{date,title}=req.body;
+  let =new Post({
+            date,
+            title,
+        });
+        
+         await newPost.save();
+         res.status(200).json({post:newPost})
+        }
+        catch(err){
+          res.status(500).json({error:err})
+        }
+  }
+
+
+
+module.exports = { getImageToday, getAllImages, getImageById, newImageUser,createPost
+}

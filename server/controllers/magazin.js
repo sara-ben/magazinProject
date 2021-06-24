@@ -114,12 +114,12 @@ const Magazin= require('../models/Magazin')
 
 
 const createMagazin =async (req, res) => {
-  const{date,title}=req.body;
-  let newMagazin=new Magazin({
+  try{ const{date,title}=req.body;
+  let =new Magazin({
             date,
             title,
         });
-        try{
+        
          await newMagazin.save();
          res.status(200).json({magazin:newMagazin})
         }

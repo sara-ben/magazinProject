@@ -1,0 +1,14 @@
+.advertisingDiv{
+    height: 20px;
+    width: 100px;
+}
+.advertisingRow{
+    background-color: black;
+
+}
+.advertisingP{
+    color: white;
+}
+.advertisingButton{
+    /* margin-left: 100px; */
+}

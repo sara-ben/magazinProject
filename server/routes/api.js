@@ -1,9 +1,11 @@
 const router = require('express').Router();
-var magazin = require("../controllers/magazin.js");
-const checkAuth= require('../Middelwere/aute');
+const magazin = require("../controllers/magazin.js");
+const post = require("../controllers/post.js");
+// const checkAuth= require('../Middelwere/aute');
 
 
-router.post('/newMagazin', magazin.newMagazin);
+router.post('/createMagazin', magazin.createMagazin);  
+router.post('/createPost', post.createPost);
 
 
 
