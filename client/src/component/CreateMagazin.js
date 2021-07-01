@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import {setMagazinId, setMagazinDate, setMagazinTitle, setMagazinPostes, setRecipeproducts,
     createMagazin} from '../redux/action'
     import './CreateMagazin.css';
+import AdvertisementBar from './AdvertisementBar/AdvertisementBar'
 
 
 const mapStateToProps = (state) => {
@@ -51,6 +52,7 @@ useEffect(()=>{
             </h5>
            
             {/* <h3>{dateStr}</h3> */}
+     <AdvertisementBar></AdvertisementBar> 
          <Carusela></Carusela>
          <Button11></Button11>
         </div>

@@ -50,7 +50,7 @@ export default connect(mapStateToProps, mapDispatchToProps)
             <Card.Img class="pic" variant="top" src={goSomewereImage} />
             <Card.Body class="d-flex justify-content-center" >
               {/* <a>All Magazins</a> */}
-              <Button variant="primary">All Magazins</Button>
+              <Link variant="link" to="/CreatePost" >Create Post</Link>
             </Card.Body>
           </Card>
 

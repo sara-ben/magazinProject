@@ -7,7 +7,7 @@ const MagazinSchema = mongoose.Schema({
     },
 
     date: {
-        type: String,
+        type: Date,
         require
     },
     
