@@ -8,6 +8,7 @@ export const CreateMagazin = ({ dispatch, getState }) => next => action => {
   debugger
   // alert("crete magazin");
   if (action.type === 'CREATE_MAGAZIN') {
+    console.log(getState().magazinReducer)
     // let magazin =  action.payload;
 
     // // var raw = JSON.stringify({

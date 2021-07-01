@@ -9,7 +9,7 @@ export function setMagazinDate(date) {
 }
 
 export function setMagazinTitle(title) {
-
+debugger;
     return { type: "SET_MAGAZIN_TITLE", payload: title }
 }
 

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+.title{
+    font: normal normal normal 66px/97px Anton;
+    text-transform: capitalize;
+    letter-spacing: 0.92px;
+     font-weight:40%;
+     font-size:6vh;
+
+}
+.date{
+    font: normal normal normal 15px/20px Roboto;
+    /* font-weight:bold; */
+
+}
