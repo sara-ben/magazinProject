@@ -1,0 +1,26 @@
+.advertisingDiv{
+    background-color: black;
+}
+.advertisingP{
+    color:white;
+    text-align: right;
+
+}
+.advertisingButton{
+    background-color: red;
+}
+.inpt{
+    background-color:black;
+    border:none;
+    border-bottom: 1px solid white;
+   
+}
+.inpt::placeholder{
+    color: white;
+}
+.sendMeButton{
+    background-color:rgb(65, 224, 224)
+}
+.div1{
+    width: 100%;
+}
