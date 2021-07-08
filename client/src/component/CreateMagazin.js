@@ -6,6 +6,7 @@ import {setMagazinId, setMagazinDate, setMagazinTitle, setMagazinPostes, setReci
     createMagazin} from '../redux/action'
     import './CreateMagazin.css';
 import AdvertisementBar from './AdvertisementBar/AdvertisementBar'
+import HelloBar from './HelloBar/HelloBar'
 
 
 const mapStateToProps = (state) => {
@@ -41,6 +42,7 @@ useEffect(()=>{
 },[])
     return (
         <div>
+            <HelloBar></HelloBar>
             <h2 className="title d-flex justify-content-center">{magazinReducerComponent.title}</h2>
             {/* <h3>{String(magazinReducerComponent.date)}</h3> */}
             <h5 className="date d-flex justify-content-center">{
@@ -52,7 +54,7 @@ useEffect(()=>{
             </h5>
            
             {/* <h3>{dateStr}</h3> */}
-     <AdvertisementBar></AdvertisementBar> 
+     {/* <AdvertisementBar></AdvertisementBar>  */}
          <Carusela></Carusela>
          <Button11></Button11>
         </div>
